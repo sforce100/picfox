@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:id="@+id/editLayout">
+	 
+	<LinearLayout
+	    android:id="@+id/penLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+	<Button
+	    android:id="@+id/pen"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="画笔" />
+
+	<Button 
+	    android:id="@+id/era"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="橡皮"/>
+	<Button 
+	    android:id="@+id/ret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="还原"/>
+	<Button 
+	    android:id="@+id/but_big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:text="绘制"/>
+	<Button 
+	    android:id="@+id/but_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:text="移动"/>
+	
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_below="@id/penLayout"
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent" 
+		android:id="@+id/paintLayout">  
+    </LinearLayout>
+
+	
+ <LinearLayout 
+    android:layout_below="@id/penLayout"
+    android:visibility="invisible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/edit_eraser_layout">
+     <TextView 
+	        android:id="@+id/edit_eraser_size_text"
+	        android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="调整橡皮大小：" />
+	 <SeekBar
+	      android:visibility="visible"
+        android:id="@+id/eraser_size"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:max="50"/>
+	 <Button 
+	     android:id="@+id/edit_eraser_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="commit"
+	     />
+ </LinearLayout>   
+
+</RelativeLayout>

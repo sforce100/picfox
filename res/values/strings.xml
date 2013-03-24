@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, PicFoxActivity!</string>
+    <string name="app_name">PicFox</string>
+	<string name="database_name">dbPicFox</string>
+	 
+    <string name="logina">请输入用户名或者邮箱</string> 
+  <string name="loginb">请输入相册密码</string> 
+  <string name="loginc">返 回</string> 
+  <string name="logind">登 陆</string> 
+  <string name="logine">注 册</string> 
+  <string name="maina">网络相册</string> 
+  <string name="mainb">照相功能</string> 
+  <string name="mainc">本地相册</string> 
+  <string name="maind">welcome my photo album</string> 
+  <string name="upload1">上 传</string> 
+  <string name="splasha">预览版</string> 
+	
+</resources>
